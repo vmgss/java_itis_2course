@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .page-title {
+            font-size: 100px;
+            font-family: 'Chalkboard SE', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10vh;
+            background: linear-gradient(to bottom, #ec8ea6, #5e343e); /
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .page-description {
+            font-family: 'Chalkboard SE', sans-serif;
+            color: #5e343e;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        body {
+            background: linear-gradient(to bottom, #efb0c0, #ffffff, #733c48);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 76px;
+            color: #ec8ea6;
+            font-family: 'Chalkboard SE', sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #ec8ea6;
+            color: white;
+            transition: background-color 0.3s ease;
+            outline: black;
+        }
+        .btn-primary:hover {
+            background-color: #5e343e;
+            color: white;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .btn-success {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            background-color: #ec8ea6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #5e343e;
+        }
+
+        .alert-text {
+            font-size: 30px;
+            font-family: 'Chalkboard SE', sans-serif;
+            color: #5e343e;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page-title">Все лучшие поисковики</div>
+<div class="page-description">Введите запрос в поисковой строке желаемого браузера</div>
+
+<div class="container">
+    <h1 class="text-center mb-4">Google</h1>
+    <form class="text-center" action="https://www.google.ru/search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="q" placeholder="Введите запрос" aria-label="Введите запрос" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Найти</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="text-center mb-4">Shodan</h1>
+    <form class="text-center" action="https://www.shodan.io/search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="query" placeholder="Введите запрос" aria-label="Введите запрос" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Найти</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="text-center mb-4">Yandex</h1>
+    <form class="text-center" action="https://yandex.ru/search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="text" placeholder="Введите запрос" aria-label="Введите запрос" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Найти</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="text-center mb-4">Bing</h1>
+    <form class="text-center" action="https://www.bing.com/search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="q" placeholder="Введите запрос" aria-label="Введите запрос" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Найти</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="text-center mb-4">Yahoo</h1>
+    <form class="text-center" action="https://www.yahoo.com/search">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="q" placeholder="Введите запрос" aria-label="Введите запрос" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Найти</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <h1 class="text-center mb-4">DuckDuckGo</h1>
+    <h3 class="text-center alert-text">Внимание! DuckDuckGo внес изменения в способ обработки запросов через сторонние сайты, и отправка запросов с данной страницы не будет работать. Перейдите на поисковик:</h3>
+    <div class="text-center">
+        <a href="https://duckduckgo.com/" class="btn btn-success mt-2" target="_blank">Перейти на DuckDuckGo</a>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
