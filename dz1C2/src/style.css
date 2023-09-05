@@ -1,0 +1,67 @@
+body {
+    font-family: "Avenir Next", ui-serif;
+    background-image: url('background.jpg');
+    background-size: 130%;
+    background-repeat: no-repeat
+}
+
+selector {
+    background-image: url('background.jpg');
+}
+
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60vh;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: medium;
+    font-family: "Avenir Next", ui-serif;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+button {
+    font-family: "Avenir Next", ui-serif;
+    background-color: #1e1e1f;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(49, 46, 46, 0.39);
+    color: #1e1e1f;
+}
+p {
+    text-align: center;
+}
